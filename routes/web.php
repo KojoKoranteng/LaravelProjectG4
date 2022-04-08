@@ -16,12 +16,13 @@ use App\Http\Controllers\PropertyController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layout.home');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+// Route::get('/Home', function () {
+//     return view('dashboard');
+// })->middleware(['auth'])->name('dashboard');
+
 
 require __DIR__.'/auth.php';
 
